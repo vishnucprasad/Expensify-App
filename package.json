@@ -8,7 +8,9 @@
     "build:dev": "webpack --watch",
     "build:prod": "webpack --env production",
     "dev-server": "webpack serve",
-    "test": "jest --config=jest.config.json"
+    "test": "jest --config=jest.config.json",
+    "start": "node server/app.js",
+    "heroku-postbuild": "npm run build:prod"
   },
   "author": "Vishnu C Prasad",
   "license": "ISC",
@@ -24,6 +26,7 @@
     "enzyme": "^3.11.0",
     "enzyme-adapter-react-16": "^1.15.6",
     "enzyme-to-json": "^3.6.1",
+    "express": "^4.17.1",
     "live-server": "^1.2.1",
     "mini-css-extract-plugin": "^1.5.0",
     "moment": "^2.29.1",
