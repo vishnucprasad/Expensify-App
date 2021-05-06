@@ -22,7 +22,7 @@ exports[`should handle editExpense 1`] = `
 </div>
 `;
 
-exports[`should handle removeExpense 1`] = `
+exports[`should handle startRemoveExpense 1`] = `
 <div>
   <ExpenseForm
     expense={
