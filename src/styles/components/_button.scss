@@ -1,0 +1,10 @@
+.button {
+  background-color: $glass-white-2;
+  backdrop-filter: blur(20px);
+  border: none;
+  border-radius: 5px;
+  color: $white;
+  font-size: $font-size-large;
+  font-weight: 300;
+  padding: $s-size;
+}

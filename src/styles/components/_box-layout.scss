@@ -1,0 +1,25 @@
+.box-layout {
+  align-items: center;
+  background: url("/images/bg.jpg");
+  background-size: cover;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  width: 100vw;
+}
+
+.box-layout__box {
+  background-color: $glass-white-1;
+  backdrop-filter: blur(20px);
+  border-radius: 8px;
+  box-shadow: $card-shadow;
+  padding: $xl-size $l-size;
+  text-align: center;
+  width: 40rem;
+  color: $white;
+}
+
+.box-layout__title {
+  line-height: 1;
+  margin: 0 0 $m-size 0;
+}
