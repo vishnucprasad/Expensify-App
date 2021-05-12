@@ -1,10 +1,29 @@
 .button {
-  background-color: $glass-white-2;
+  background: $glass-white-2;
   backdrop-filter: blur(20px);
   border: none;
   border-radius: 5px;
   color: $white;
+  display: inline-block;
   font-size: $font-size-large;
   font-weight: 300;
+  line-height: 1;
   padding: $s-size;
+  text-decoration: none;
+}
+
+.button--success {
+  background: $glass-success;
+}
+
+.button--warning {
+  background: $glass-warning;
+}
+
+.button--danger {
+  background: $glass-danger;
+}
+
+.button--link {
+  background: none;
 }

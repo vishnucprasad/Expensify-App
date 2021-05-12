@@ -1,67 +1,127 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`should handle startEditExpense 1`] = `
-<div>
-  <ExpenseForm
-    expense={
-      Object {
-        "amount": 4500,
-        "createdAt": 345600000,
-        "description": "Credit Card",
-        "id": "3",
-        "note": "",
-      }
-    }
-    onSubmit={[Function]}
-  />
-  <button
-    onClick={[Function]}
+<div
+  className="content"
+>
+  <div
+    className="page-header"
   >
-    Remove
-  </button>
+    <div
+      className="content-container"
+    >
+      <h1
+        className="page-header__title"
+      >
+        Edit Expense
+      </h1>
+    </div>
+  </div>
+  <div
+    className="content-container card"
+  >
+    <ExpenseForm
+      expense={
+        Object {
+          "amount": 4500,
+          "createdAt": 345600000,
+          "description": "Credit Card",
+          "id": "3",
+          "note": "",
+        }
+      }
+      onSubmit={[Function]}
+    />
+    <button
+      className="button button--danger"
+      onClick={[Function]}
+    >
+      Remove Expense
+    </button>
+  </div>
 </div>
 `;
 
 exports[`should handle startRemoveExpense 1`] = `
-<div>
-  <ExpenseForm
-    expense={
-      Object {
-        "amount": 4500,
-        "createdAt": 345600000,
-        "description": "Credit Card",
-        "id": "3",
-        "note": "",
-      }
-    }
-    onSubmit={[Function]}
-  />
-  <button
-    onClick={[Function]}
+<div
+  className="content"
+>
+  <div
+    className="page-header"
   >
-    Remove
-  </button>
+    <div
+      className="content-container"
+    >
+      <h1
+        className="page-header__title"
+      >
+        Edit Expense
+      </h1>
+    </div>
+  </div>
+  <div
+    className="content-container card"
+  >
+    <ExpenseForm
+      expense={
+        Object {
+          "amount": 4500,
+          "createdAt": 345600000,
+          "description": "Credit Card",
+          "id": "3",
+          "note": "",
+        }
+      }
+      onSubmit={[Function]}
+    />
+    <button
+      className="button button--danger"
+      onClick={[Function]}
+    >
+      Remove Expense
+    </button>
+  </div>
 </div>
 `;
 
 exports[`should render EditExpense correctly 1`] = `
-<div>
-  <ExpenseForm
-    expense={
-      Object {
-        "amount": 4500,
-        "createdAt": 345600000,
-        "description": "Credit Card",
-        "id": "3",
-        "note": "",
-      }
-    }
-    onSubmit={[Function]}
-  />
-  <button
-    onClick={[Function]}
+<div
+  className="content"
+>
+  <div
+    className="page-header"
   >
-    Remove
-  </button>
+    <div
+      className="content-container"
+    >
+      <h1
+        className="page-header__title"
+      >
+        Edit Expense
+      </h1>
+    </div>
+  </div>
+  <div
+    className="content-container card"
+  >
+    <ExpenseForm
+      expense={
+        Object {
+          "amount": 4500,
+          "createdAt": 345600000,
+          "description": "Credit Card",
+          "id": "3",
+          "note": "",
+        }
+      }
+      onSubmit={[Function]}
+    />
+    <button
+      className="button button--danger"
+      onClick={[Function]}
+    >
+      Remove Expense
+    </button>
+  </div>
 </div>
 `;

@@ -1,13 +1,22 @@
 //Colors
-$dark-grey: #333333;
+$grey: #333333;
+$dark-grey: #111111;
+$dark-blue: #364051;
 $glass-white-1: rgba(255, 255, 255, 0.01);
-$glass-white-2: rgba(225, 225, 255, 0.25);
+$glass-white-2: rgba(225, 225, 255, 0.4);
+$glass-white-3: rgba(225, 225, 255, 0.8);
+$glass-primary: rgba(0, 123, 255, 0.25);
+$glass-success: rgba(40, 167, 69, 0.5);
+$glass-warning: rgba(255, 193, 7, 0.5);
+$glass-danger: rgba(220, 53, 69, 0.5);
 $white: #ffffff;
 //Shadows
 $card-shadow: 20px 20px 22px rgba(0, 0, 0, 0.2);
 //Font Sizes
 $font-size-large: 1.8rem;
+$font-size-small: 1.4rem;
 // Spacing
+$xs-size: 0.8rem;
 $s-size: 1.2rem;
 $m-size: 1.6rem;
 $l-size: 3.2rem;

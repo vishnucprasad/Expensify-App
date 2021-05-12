@@ -1,12 +1,19 @@
+* {
+  box-sizing: border-box;
+  outline: none;
+}
+
 html {
   font-size: 62.5%;
 }
 
 body {
-  color: $dark-grey;
+  color: $white;
   font-family: Helvetica, Arial, sans-serif;
   font-size: $m-size;
   line-height: 1.6;
+  background: url("/images/bg.jpg");
+  background-size: cover;
 }
 
 button {
@@ -17,6 +24,10 @@ button:disabled {
   cursor: default;
 }
 
-.is-active {
-  font-weight: bold;
+.card {
+  background-color: $glass-white-2;
+  backdrop-filter: blur(20px);
+  border-radius: 8px;
+  box-shadow: $card-shadow;
+  padding: $m-size !important;
 }

@@ -1,0 +1,18 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  > * {
+    border-radius: 8px;
+    margin-bottom: $m-size;
+  }
+}
+
+.form__error {
+  background: $glass-danger;
+  border-radius: 8px;
+  color: $white;
+  font-style: italic;
+  margin: 0 0 $m-size 0;
+  padding: $xs-size;
+  text-align: center;
+}
