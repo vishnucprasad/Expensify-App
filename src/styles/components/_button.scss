@@ -27,3 +27,9 @@
 .button--link {
   background: none;
 }
+
+.button--swal {
+  margin: 0 $s-size;
+  padding: $s-size $l-size;
+  border-radius: $l-size;
+}
