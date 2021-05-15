@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should correctly render Footer 1`] = `
+<div
+  className="footer"
+>
+  <div
+    className="content-container"
+  >
+    <p
+      className="footer__text"
+    >
+      © 2021 Expensify. All rights reserved | Developed by 
+      <a
+        href="https://vishnucprasad.github.io"
+        target="_blank"
+      >
+        Vishnu C Prasad
+      </a>
+    </p>
+  </div>
+</div>
+`;

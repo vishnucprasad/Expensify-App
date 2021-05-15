@@ -1,0 +1,12 @@
+.footer {
+  background: $dark-blue;
+}
+.footer__text {
+  margin: 0;
+  padding: $m-size 0;
+  a {
+    color: $white;
+    font-weight: 700;
+    text-decoration: none;
+  }
+}
