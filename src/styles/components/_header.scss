@@ -1,5 +1,10 @@
 .header {
   background: $dark-blue;
+  box-shadow: $card-shadow;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
 }
 
 .header__content {

@@ -1,8 +1,10 @@
 .content {
   background-color: $glass-white-1;
   backdrop-filter: blur(20px);
+  margin-top: $m-size;
   min-height: 100vh;
   padding-bottom: $m-size;
+  padding-top: $xl-size;
   @media (min-width: $desktop-breakpoint) {
     padding-bottom: $l-size;
   }
