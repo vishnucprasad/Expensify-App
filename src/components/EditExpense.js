@@ -2,6 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import ExpenseForm from './ExpenseForm';
 import { startEditExpense, startRemoveExpense } from '../actions/expenses';
+import MySwal from '../swal/swal';
 
 export class EditExpense extends React.Component {
     onSubmit = (expense) => {
@@ -9,8 +10,18 @@ export class EditExpense extends React.Component {
         this.props.history.push('/');
     };
     onClick = () => {
-        this.props.startRemoveExpense({ id: this.props.expense.id });
-        this.props.history.push('/');
+        MySwal.fire({
+            title: 'Are you sure you want to remove this expense ?',
+            icon: 'question',
+            showCancelButton: true,
+            confirmButtonText: 'Remove',
+            reverseButtons: true
+        }).then((result) => {
+            if (result.isConfirmed) {
+                this.props.startRemoveExpense({ id: this.props.expense.id });
+                this.props.history.push('/');
+            }
+        });
     };
     render() {
         return (

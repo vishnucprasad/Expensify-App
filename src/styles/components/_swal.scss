@@ -7,7 +7,9 @@
   backdrop-filter: blur(20px) !important;
   border-radius: 8px !important;
   box-shadow: $card-shadow !important;
+  max-width: 64rem !important;
   padding: $m-size !important;
+  width: fit-content !important;
 }
 
 .swal-container__icon {

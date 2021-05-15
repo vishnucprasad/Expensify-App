@@ -1,4 +1,5 @@
 import database from '../firebase/firebase';
+import { Toast } from '../swal/swal';
 
 // ADD_EXPENSE
 export const addExpense = (expense) => ({
@@ -37,6 +38,10 @@ export const startRemoveExpense = ({ id } = {}) => {
         const uid = getState().auth.uid;
         return database.ref(`users/${uid}/expenses/${id}`).remove().then(() => {
             dispatch(removeExpense({ id }));
+            Toast.fire({
+                icon: 'success',
+                title: 'Expense removed successfully'
+            });
         });
     };
 };
