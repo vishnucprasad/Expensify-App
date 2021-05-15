@@ -1,6 +1,7 @@
 import React from 'react';
 import moment from 'moment';
 import { SingleDatePicker } from 'react-dates';
+import { Toast } from '../swal/swal';
 
 export default class ExpenseForm extends React.Component {
     constructor(props) {
@@ -43,6 +44,10 @@ export default class ExpenseForm extends React.Component {
 
         if (!this.state.description || !this.state.amount) {
             this.setState(() => ({ error: 'Please provide description and amount.' }));
+            Toast.fire({
+                icon: 'error',
+                title: 'Failed to add expense.'
+            })
         } else {
             this.setState(() => ({ error: '' }));
             this.props.onSubmit({
