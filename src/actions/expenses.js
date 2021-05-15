@@ -23,6 +23,10 @@ export const startAddExpense = (expenseData = {}) => {
                 id: ref.key,
                 ...expense
             }));
+            Toast.fire({
+                icon: 'success',
+                title: 'Expense Added successfully'
+            });
         });
     };
 };
@@ -58,6 +62,10 @@ export const startEditExpense = (id, updates) => {
         const uid = getState().auth.uid;
         return database.ref(`users/${uid}/expenses/${id}`).update(updates).then(() => {
             dispatch(editExpense(id, updates));
+            Toast.fire({
+                icon: 'success',
+                title: 'Expense edited successfully'
+            });
         });
     };
 };
